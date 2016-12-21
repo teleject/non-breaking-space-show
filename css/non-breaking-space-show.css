@@ -1,6 +1,9 @@
-html {
+* {
 	margin: 0;
 	height: 0;
+}
+
+html {
 	font-size: 16px;
 	font-weight: normal;
 	font-family: Georgia, serif;
@@ -9,4 +12,15 @@ html {
 .current {
 	background: green;
 	color: white;
+}
+
+nav {
+	list-style-type: none;
+}
+nav > li { 
+	display: inline-block;
+}
+
+.nav-header {
+	font-size: 1.25rem;
 }
