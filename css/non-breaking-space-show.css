@@ -24,3 +24,8 @@ nav + li {
 .nav-header {
 	font-size: 1.25rem;
 }
+
+.nav-header .current {
+	background: inherit;
+	color: inherit;
+}
