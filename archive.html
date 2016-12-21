@@ -3,3 +3,13 @@ layout: default
 ---
 
 <h1>Archive page</h1>
+
+<ul>
+{% for episodes in site.posts %}
+	<li>
+		<a href="{{epiodes.source}}">{{episodes.title}}</a>
+		<p>{{episodes.meta}}</p>
+	</li>
+{% endfor %}
+
+<ul>
