@@ -8,8 +8,9 @@ layout: default
 {% for episodes in site.posts %}
 	<li>
 		<a href="{{episodes.source}}">{{episodes.title}}</a>
-		<ul>{% for guests in guests.starring %}
-			<li>{{guests.starring}}</li>
+		
+		<ul>{% for guest in guest.starring %}
+			<li>{{guest.starring}}</li>
 		{% endfor %}</ul>
 		<p></p>
 	</li>
