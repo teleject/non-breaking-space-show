@@ -5,3 +5,8 @@ html {
 	font-weight: normal;
 	font-family: Georgia, serif;
 }
+
+.current {
+	background: green;
+	color: white;
+}
