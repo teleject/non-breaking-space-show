@@ -3,7 +3,7 @@
 <ul>
 {% for episodes in site.posts offset:1 limit:5 %}
 	<li>
-		<a href="{{episodes.source}}">{{episodes.title}}</a>
+		<a href="{{sitebaseurl}}{{episodes.url}}">{{episodes.title}}</a>
 
 		<p>Stuff </p>
 	</li>
