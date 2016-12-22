@@ -1,0 +1,21 @@
+
+.current {
+	background: green;
+	color: white;
+}
+
+nav {
+	list-style-type: none;
+}
+nav + li { 
+	display: inline-block;
+}
+
+.nav-header {
+	font-size: 1.25rem;
+}
+
+.nav-header .current {
+	background: inherit;
+	color: inherit;
+}

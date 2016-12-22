@@ -1,30 +1,7 @@
-* {
-	
-}
+---
+---
 
-html {
-	font-size: 16px;
-	font-weight: normal;
-	font-family: Georgia, serif;
-}
-
-.current {
-	background: green;
-	color: white;
-}
-
-nav {
-	list-style-type: none;
-}
-nav + li { 
-	display: inline-block;
-}
-
-.nav-header {
-	font-size: 1.25rem;
-}
-
-.nav-header .current {
-	background: inherit;
-	color: inherit;
-}
+{% include css/normalize.css %}
+{% include css/nbsptv-type.css %}
+{% include css/nbsptv-color.css %}
+{% include css/common.css %}

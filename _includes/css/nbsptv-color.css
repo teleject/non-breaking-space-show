@@ -1,0 +1,17 @@
+body
+{
+    color: #366;
+    background-color: #cf9;
+}
+a:link
+{
+    color: #990;
+}
+a:link:visited
+{
+    color: #390;
+}
+a:link:active
+{
+    color: #099;
+}
