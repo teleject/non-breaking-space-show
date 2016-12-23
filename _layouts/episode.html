@@ -1,0 +1,54 @@
+<!doctype html>
+
+<head>
+    <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
+    <link href="{{site.baseurl}}non-breaking-space-show.css" rel="stylesheet" />
+	<script src="{{site.baseurl}}non-breaking-space-show.js"></script>
+
+    {% include meta.html %}
+
+</head>
+
+<body>
+    <header>
+        <h1>Non Breaking Space Show</h1>
+
+{% include nav.html navclass='nav-header' %}
+
+    </header>
+
+
+<section id="content">
+
+<h1>{{page.title}}</h1>
+
+		<p>&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
+{{ page.date | date: "%B" }} 
+{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }} 🕓 {{ page.minutes }} Minutes</p>
+
+
+{{page.meta}}
+
+{% include audio.html file=page.audio %}
+
+{{content}}
+
+
+
+</section>
+
+    <footer>
+
+{% include nav.html navclass='nav-footer' %}
+
+{% include host.html %}
+
+{% include social.html %}
+
+{% include subscribe.html %}
+
+{% include copyright.html %}
+
+    </footer>
+</body>
+</html>

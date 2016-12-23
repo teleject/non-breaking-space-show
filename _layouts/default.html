@@ -2,7 +2,11 @@
 
 <head>
     <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
-    <link href="{{site.baseurl}}/non-breaking-space-show.css" rel="stylesheet" />
+    <link href="{{site.baseurl}}non-breaking-space-show.css" rel="stylesheet" />
+	<script src="{{site.baseurl}}non-breaking-space-show.js"></script>
+
+    {% include meta.html %}
+
 </head>
 
 <body>
@@ -14,6 +18,8 @@
     </header>
 
 
+<section id="content">
+
     {{content}}
 
 
@@ -21,12 +27,24 @@
 
 {% include recently.html %}
 
+<section>
+
 
     <footer>
 
 {% include nav.html navclass='nav-footer' %}
 
-        <p>&copy; Christopher Schmitt
+<section class="footer-menu">
+
+{% include host.html %}
+
+{% include social.html %}
+
+{% include subscribe.html %}
+
+{% include copyright.html %}
+
+</section>
 
     </footer>
 </body>

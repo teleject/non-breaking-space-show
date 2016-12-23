@@ -1,10 +1,33 @@
-<h3>Recently</h3>
+<h3>Latest</h3>
 
-<ul>
 {% for episodes in site.posts limit:1 %}
-	<li>
-		<a href="{{sitebaseurl}}{{episodes.url}}">{{episodes.title}}</a>
 
-		<p>Stuff </p>
-	</li>
-{% endfor %}</ul>
+		<p>&#x1f4c5; {% assign d = episodes.date | date: "%-d"  %}
+{{ episodes.date | date: "%B" }} 
+{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ episodes.date | date: "%Y" }} 🕓 {{ episodes.minutes }} Minutes</p>
+
+		<a href="{{ site.baseurl }}{{episodes.url}}">{{episodes.title}}</a>
+
+<p>
+
+<!-- 
+{{ episodes.guests }}
+-->
+
+
+ 
+ <!--
+{% for starring in episodes.guests.starring %}
+<p>Episode №{{ episodes.episode }} with <strong> {{ starring }}</strong>  
+{% endfor %}
+-->
+
+
+</p>
+
+		<p>{{episodes.meta}}</p>
+
+
+{% endfor %}
+
+

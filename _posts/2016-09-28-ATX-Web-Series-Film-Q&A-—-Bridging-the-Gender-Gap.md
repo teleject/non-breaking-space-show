@@ -1,13 +1,13 @@
 ---
-layout: 
-title: 
-abstract:
-figure: 
-audio: 
-time: 
-category:
-via-gsfm: 
+layout: episode
+title: ATX Web Series Film Q&A — Bridging the Gender Gap
+meta: A special Non Breaking Space episode! Live Q&amp;A session from the first ever ATX Web Film Series presentation. ATX Web Film Series aims to provide thought- and discussion-provoking films about the Web, Design, and Technology.
+episode: 102
+minutes: 42
+source: http://goodstuff.fm/nbsp/97
+audio: http://podcasts-1.feedpress.co/10609/nbsp-97.mp3
 guests:
-- starring: 
+    starring: 
+    - Sam Kapila
+    - Matt Griffin
 ---
-

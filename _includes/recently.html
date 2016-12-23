@@ -3,8 +3,10 @@
 <ul>
 {% for episodes in site.posts offset:1 limit:5 %}
 	<li>
-		<a href="{{sitebaseurl}}{{episodes.url}}">{{episodes.title}}</a>
+		<a href="{{ site.baseurl }}{{episodes.url}}">{{episodes.title}}</a>
 
-		<p>Stuff </p>
+		<p>{% assign d = episodes.date | date: "%-d"  %}
+{{ episodes.date | date: "%B" }} 
+{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ episodes.date | date: "%Y" }}</p>
 	</li>
 {% endfor %}</ul>

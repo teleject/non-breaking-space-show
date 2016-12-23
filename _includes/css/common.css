@@ -1,14 +1,31 @@
 
-.current {
-	background: green;
-	color: white;
+body {
+	margin: 1rem;
+}
+
+footer, #content, .footer-menu {
+	border-top: 1px black solid;
+}
+
+#content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.current{
+	background-color: inherit;
+	color: inherit;
 }
 
 nav {
 	list-style-type: none;
 }
-nav + li { 
+nav li { 
 	display: inline-block;
+}
+
+audio {
+	width: 100%;
 }
 
 .nav-header {
@@ -16,6 +33,12 @@ nav + li {
 }
 
 .nav-header .current {
-	background: inherit;
-	color: inherit;
+		background-color: black;
+	color: white;
+
 }
+
+.sponsor-text {
+	
+}
+

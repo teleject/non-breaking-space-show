@@ -1,0 +1,17 @@
+---
+layout: episode
+---
+
+<h1>Archive page</h1>
+
+<ol reversed="reversed">
+{% for episodes in site.posts %}
+	<li>
+		<a href="">{{episodes.title}}</a>
+		
+		<ul>{% for guest in guest.starring %}
+			<li>{{guest.starring}}</li>
+		{% endfor %}</ul>
+		<p></p>
+	</li>
+{% endfor %}</ul>
