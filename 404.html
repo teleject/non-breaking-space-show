@@ -1,5 +1,20 @@
 ---
-layout: default
+layout: filenotfound
 title: 404
 ---
-<p>Sorry this page does not exist =(</p>
+
+
+<h2>404. Page not found</h2>
+
+<p>Unfortunately, this page does not exist, but the path you find yourself on is not blocked:</p>
+
+<ul>
+	<li>
+		<a href="#" onclick="history.go(-1);" />Go back</a>
+		<a href="{{ site.baseurl }}">Home page</a>
+		{% for episodes in site.posts limit:1 %}
+		<a href="{{ site.baseurl }}{{episodes.url}}">Latest episode</a>
+		{% endfor %}
+	</li>
+</ul>
+

@@ -1,0 +1,10 @@
+- https://stackoverflow.com/questions/41311455/howto-find-the-sum-of-values-from-posts-in-jekyll-frontmatter
+
+- ruby keeps on failing after reboot: https://stackoverflow.com/questions/7788946/rails-keeps-telling-me-that-its-not-currently-installed
+
+& https://stackoverflow.com/questions/9280738/why-do-i-need-to-bundle-install-after-every-reboot-in-rails-3-2-1-with-rvm
+
+— typical pages can be in root or inside folders. Pages use a layout for formatting the page. Each page can add some content, then it gets sucked into the layout where additional markup can be applied. 
+
+0 Disable CSS Rules in a page - https://www.techwalla.com/articles/how-to-disable-css-in-chrome
+

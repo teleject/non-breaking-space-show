@@ -1,2 +1,20 @@
 baseurl: /non-breaking-space-show/
+title: Non Breaking Space Show
+collections: 
+  guests:
+    output: true
+description: Christopher Schmitt talks with international experts on digital art, coding, design, and publishing in our digital world.
+url: http://nonbreakingspace.tv
+facebook:
+  publisher: https://www.facebook.com/nbsptv/
+author: teleject
+twitter:
+    username: nbsptv
+social:
+  name: Non Breaking Space Show
+  links:
+    - https://twitter.com/nbsptv
+    - https://www.facebook.com/nbsptv/
 exclude: [README.md]
+gems:
+  - jekyll-seo-tag

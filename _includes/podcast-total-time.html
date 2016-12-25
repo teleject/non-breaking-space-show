@@ -1,0 +1,5 @@
+{% assign total = 0 %}
+    {% for post in site.posts %}
+        {% assign total = total | plus: post.minutes  %}
+    {% endfor %}
+{{ total | divided_by:60 }} hours

@@ -1,6 +1,6 @@
 ---
 layout: episode
-title: ATX Web Series Film Q&A — Bridging the Gender Gap
+title: ATX Web Series Film Q&amp;A — Bridging the Gender Gap
 meta: A special Non Breaking Space episode! Live Q&amp;A session from the first ever ATX Web Film Series presentation. ATX Web Film Series aims to provide thought- and discussion-provoking films about the Web, Design, and Technology.
 episode: 102
 minutes: 42

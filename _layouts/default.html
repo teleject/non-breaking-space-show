@@ -2,6 +2,7 @@
 
 <head>
     <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
+    {% seo url=false %}
     <link href="{{site.baseurl}}non-breaking-space-show.css" rel="stylesheet" />
 	<script src="{{site.baseurl}}non-breaking-space-show.js"></script>
 
@@ -23,9 +24,16 @@
     {{content}}
 
 
+<h3>What's inside!</h3>
+
+{% include podcast-total-time.html %}
+
+
 {% include latest.html %}
 
 {% include recently.html %}
+
+
 
 <section>
 
@@ -34,7 +42,7 @@
 
 {% include nav.html navclass='nav-footer' %}
 
-<section class="footer-menu">
+{% include goodstuff.html %}
 
 {% include host.html %}
 
@@ -44,7 +52,6 @@
 
 {% include copyright.html %}
 
-</section>
 
     </footer>
 </body>
