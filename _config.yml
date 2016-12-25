@@ -1,5 +1,6 @@
-baseurl: /non-breaking-space-show/
+baseurl: /non-breaking-space-show
 title: Non Breaking Space Show
+permalink: pretty
 collections: 
   guests:
     output: true

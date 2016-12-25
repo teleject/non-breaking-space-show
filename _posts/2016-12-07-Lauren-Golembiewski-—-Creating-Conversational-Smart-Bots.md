@@ -10,6 +10,7 @@ guests:
 - starring: Laren Golembiewski
 ---
 
-Product Design Director Lauren Golembiewski is co-founder of Voxable which builds conversational bots and voice interfaces.
+
+### Show Notes
 
 {% include post-pagination.html %}

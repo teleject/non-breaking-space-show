@@ -11,9 +11,7 @@ guests:
     - Speakers from CSS Dev Conf 2016
 ---
 
-## Show Notes
 
-<a href="http://goodstuff.fm/nbsp/102">![Photo from CSS Dev Conf 2016 Wrap Up Panel for the Non Breaking Space Show](https://i.ytimg.com/vi/ZP6ZyPwUxg0/maxresdefault.jpg "Photo from CSS Dev Conf 2016 Wrap Up Panel for the Non Breaking Space Show")</a>
 
 ### Topics
 
@@ -50,6 +48,8 @@ Say aloud, "Alexa, play Non Breaking Space Show podcast on Tune-in!"
 
 * **[CSS Dev Conf Newsletter](http://newsletter.cssdevconf.com/)** - Be one of the first to know when 2017's event details are announced, when limited Earliest Bird Tickets go on sale, and when the call for speakers by signing up for the CSS Dev Conf Newsletter!
 * **[Feed.Press](http://feed.press/nbsp)** - Hosting and feed support provided by Feed.Press. [Sign-up today](http://feed.press/nbsp) and try FeedPress on a 14-day trial (no contracts or commitments). Use promo code "NBSP" during checkout to get 10% off your first year.
+
+<a href="http://goodstuff.fm/nbsp/102">![Photo from CSS Dev Conf 2016 Wrap Up Panel for the Non Breaking Space Show](https://i.ytimg.com/vi/ZP6ZyPwUxg0/maxresdefault.jpg "Photo from CSS Dev Conf 2016 Wrap Up Panel for the Non Breaking Space Show")</a>
 
 {% include post-pagination.html %}
 

@@ -6,5 +6,6 @@
 
 — typical pages can be in root or inside folders. Pages use a layout for formatting the page. Each page can add some content, then it gets sucked into the layout where additional markup can be applied. 
 
-0 Disable CSS Rules in a page - https://www.techwalla.com/articles/how-to-disable-css-in-chrome
+- Disable CSS Rules in a page - https://www.techwalla.com/articles/how-to-disable-css-in-chrome
 
+- use permalink in front matter for 404 when using pretty - https://stackoverflow.com/questions/17182712/avoid-directory-for-some-html-files-when-permalink-setting-is-pretty-in-jekyll

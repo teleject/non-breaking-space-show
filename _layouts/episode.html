@@ -6,8 +6,8 @@ layout: episode
 
 <head>
     <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
-    <link href="{{site.baseurl}}non-breaking-space-show.css" rel="stylesheet" />
-	<script src="{{site.baseurl}}non-breaking-space-show.js"></script>
+    <link href="{{site.baseurl}}/non-breaking-space-show.css" rel="stylesheet" />
+	<script src="{{site.baseurl}}/non-breaking-space-show.js"></script>
 
     {% include meta.html %}
 
@@ -21,20 +21,21 @@ layout: episode
 
     </header>
 
+<hr />
 
 <section id="content">
 
+
+
 <h1>{{page.title}}</h1>
 
-
-
-
-		<p>&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
+ <p class="episode__details">&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
 {{ page.date | date: "%B" }} 
 {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }} 🕓 {{ page.minutes }} Minutes</p>
 
 {% include audio.html file=page.audio %}
 
+{{ page.meta }}
 
 {{content}}
 
@@ -42,17 +43,21 @@ layout: episode
 
 </section>
 
-    <footer>
-
 {% include nav.html navclass='nav-footer' %}
 
-{% include host.html %}
+<hr />
 
-{% include social.html %}
+<section class="network">
 
-{% include subscribe.html %}
+{% include goodstuff.html %}
 
-{% include copyright.html %}
+</section>
+
+<hr />
+
+    <footer>
+
+    {% include footer.html %}
 
     </footer>
 </body>

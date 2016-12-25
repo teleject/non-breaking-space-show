@@ -478,13 +478,13 @@ a:link:active
     color: #099;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 
 body {
 	margin: 1rem;
-}
-
-footer, #content, .footer-menu {
-	border-top: 1px black solid;
 }
 
 #content img {
@@ -520,5 +520,54 @@ audio {
 
 .sponsor-text {
 	
+}
+
+.epsiode {
+}
+
+.episode__details {
+	font-size: .9rem;
+	text-transform: uppercase;
+}
+
+.episode__player {
+
+}
+
+
+audio
+{
+transition:all 0.3s ease-out;
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,.5);
+opacity: .9;
+}
+audio:hover, audio:focus, audio:active
+{
+	position: relative;
+	top: 2px;
+	left: 2px;
+transition:all 0.3s ease-out;
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,.0);
+opacity: .7;
+}
+
+audio::-webkit-media-controls-panel {
+	background: black;
+  border-radius: 0;
+  border: 1px solid rgba(153,153,153,.8);
+  border-bottom: 1px solid rgba(204,204,204,.8);
+  border-right: 1px solid rgba(204,204,204,.8);
+}
+
+audio::-webkit-media-controls-panel:hover {
+	    border: 1px solid rgba(153,153,153,.8);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-volume-slider {
+	color: red;
+	x-webkit-filter: hue-rotate(143deg) saturate(10); 
 }
 

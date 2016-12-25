@@ -1,6 +1,12 @@
+     <hr />
+
         <nav>
             <ul class="nav {{include.navclass}}">
-                <li><a href="{{site.baseurl}}" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+                <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
                 <li><a href="{{site.baseurl}}/episodes/" class="{% if page.url == '/archive.html' %}current{% endif %}">Episodes</a></li>
+                <li><a href="{{site.baseurl}}/guests/" class="{% if page.url == '/guests.html' %}current{% endif %}">Guests</a></li>
+				<li><a href="{{site.baseurl}}/topics/" class="{% if page.url == '/topics.html' %}current{% endif %}">Topics</a></li>
+                <li><a href="{{site.baseurl}}/subscribe/" class="{% if page.url == '/subscribe.html' %}current{% endif %}">Subscribe</a></li>
+              <li><a href="{{site.baseurl}}/subscribe/" class="{% if page.url == '/about.html' %}current{% endif %}">About</a></li>
             </ul>
         </nav>

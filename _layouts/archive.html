@@ -6,8 +6,8 @@ layout: archive
 
 <head>
     <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
-    <link href="{{site.baseurl}}non-breaking-space-show.css" rel="stylesheet" />
-	<script src="{{site.baseurl}}non-breaking-space-show.js"></script>
+    <link href="{{site.baseurl}}/non-breaking-space-show.css" rel="stylesheet" />
+	<script src="{{site.baseurl}}/non-breaking-space-show.js"></script>
 
 	{% include meta.html %}
 
@@ -22,31 +22,30 @@ layout: archive
 
     </header>
 
+<hr />
 
 <section id="content">
 
 {{ content }}
 
-		<p>&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
-{{ page.date | date: "%B" }} 
-{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }} 🕓 {{ page.minutes }} Minutes</p>
-
-
 </section>
 
-    <footer>
 
 {% include nav.html navclass='nav-footer' %}
 
+<hr />
+
+<section class="network">
+
 {% include goodstuff.html %}
 
-{% include host.html %}
+</section>
 
-{% include social.html %}
+<hr />
 
-{% include subscribe.html %}
+    <footer>
 
-{% include copyright.html %}
+	{% include footer.html %}
 
 
     </footer>
