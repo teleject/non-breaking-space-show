@@ -91,3 +91,38 @@ audio::-webkit-media-controls-volume-slider {
 	x-webkit-filter: hue-rotate(143deg) saturate(10); 
 }
 
+
+.subscribe__links a[href^="http"] {
+  padding-left: 19px;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.subscribe__links a[href*="itunes.apple.com"]{
+  background-image: url(http://www.google.com/s2/favicons?domain=itunes.apple.com);
+}
+.subscribe__links a[href*="stitcher.com"]{
+  background-image: url(http://www.google.com/s2/favicons?domain=stitcher.com);
+}
+.subscribe__links a[href*="tunein.com"]{
+  background-image: url(http://www.google.com/s2/favicons?domain=tunein.com);
+}
+.subscribe__links a[href*="youtube.com"]{
+  background-image: url(http://www.google.com/s2/favicons?domain=youtube.com);
+}
+
+.subscribe__links a[href*="facebook.com"]{
+  background-image: url(http://www.google.com/s2/favicons?domain=facebook.com);
+}
+
+.subscribe__links a  {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.subscribe__links {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}

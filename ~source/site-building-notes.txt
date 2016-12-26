@@ -2,10 +2,26 @@
 
 - ruby keeps on failing after reboot: https://stackoverflow.com/questions/7788946/rails-keeps-telling-me-that-its-not-currently-installed
 
-& https://stackoverflow.com/questions/9280738/why-do-i-need-to-bundle-install-after-every-reboot-in-rails-3-2-1-with-rvm
+- https://stackoverflow.com/questions/9280738/why-do-i-need-to-bundle-install-after-every-reboot-in-rails-3-2-1-with-rvm
 
 — typical pages can be in root or inside folders. Pages use a layout for formatting the page. Each page can add some content, then it gets sucked into the layout where additional markup can be applied. 
 
 - Disable CSS Rules in a page - https://www.techwalla.com/articles/how-to-disable-css-in-chrome
 
 - use permalink in front matter for 404 when using pretty - https://stackoverflow.com/questions/17182712/avoid-directory-for-some-html-files-when-permalink-setting-is-pretty-in-jekyll
+
+- convert string to markdown. Great for meta to descriptions {{ page.meta | markdownify }} - http://news.humancoders.com/t/developpement/items/11149-jekyll-cheat-sheet
+
+- style HTML5 audio controller - https://stackoverflow.com/questions/35259242/css-style-audio
+
+- github approved plugins and themes - https://github.com/github/pages-gem/blob/master/lib/github-pages/plugins.rb
+
+- install gems for jekyll - https://stackoverflow.com/questions/6482738/installing-ruby-gems-not-working-with-home-brew
+
+- underline in css: https://codepen.io/ghepting/pen/tLnHK/
+
+- linking data author collection to its post - http://www.madebymarket.com/blog/dev/fun-jekyll-tricks.html
+
+- combining two data sources - https://solael.gitbooks.io/internship-report/content/Appendix/jekyll.html
+
+- using live reload with jekyll - http://metaskills.net/2013/09/02/jekyll-tips-and-tricks/

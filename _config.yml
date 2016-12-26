@@ -19,3 +19,10 @@ social:
 exclude: [README.md]
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-feed
+  - jekyll-default-layout
+  - jekyll-avatar
+  - jemoji

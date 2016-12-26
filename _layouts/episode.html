@@ -15,7 +15,8 @@ layout: episode
 
 <body>
     <header>
-        <h1>Non Breaking Space Show</h1>
+        <h1><a href="{{site.baseurl}}/">Non Breaking Space Show</a></h1>
+
 
 {% include nav.html navclass='nav-header' %}
 
@@ -31,13 +32,15 @@ layout: episode
 
  <p class="episode__details">&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
 {{ page.date | date: "%B" }} 
-{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }} 🕓 {{ page.minutes }} Minutes</p>
+{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}  🕓 {{ page.minutes }} Minutes</p>
 
 {% include audio.html file=page.audio %}
 
-{{ page.meta }}
+{{ page.meta | markdownify }}
 
 {{content}}
+
+
 
 
 
