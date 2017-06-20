@@ -1,0 +1,27 @@
+/*
+Font: 		TT Berlinerins
+Style: 		Grotesk
+URL: 		https://www.youworkforthem.com/font/T7865/tt-berlinerins
+Foundry: 	TypeType
+Foundry: 	https://www.youworkforthem.com/designer/538/typetype
+Copyright:	Copyright (c) 2017 by Typetype. Designer Ivan Gladkikh, technical designers Eugenia Pestova, Tanya Cherkiz, Dmitriy Greshnev. All rights reserved.
+Version: 	17
+Created:	May 11, 2017
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'TTBerlinerins-Grotesk';
+	src: url('tt-berlinerins-grotesk.eot');
+	src: url('tt-berlinerins-grotesk.eot?#iefix') format('embedded-opentype'),
+             url('tt-berlinerins-grotesk.woff2') format('woff2'),
+	     url('tt-berlinerins-grotesk.woff') format('woff'),
+	     url('tt-berlinerins-grotesk.ttf') format('truetype'),
+	     url('tt-berlinerins-grotesk.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

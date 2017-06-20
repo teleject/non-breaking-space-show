@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'TTBerlinerins-Grotesk';
+	src: url('fonts/tt-berlinerins-grotesk.eot');
+	src: url('fonts/tt-berlinerins-grotesk.eot?#iefix') format('embedded-opentype'),
+             url('fonts/tt-berlinerins-grotesk.woff2') format('woff2'),
+	     url('fonts/tt-berlinerins-grotesk.woff') format('woff'),
+	     url('fonts/tt-berlinerins-grotesk.ttf') format('truetype'),
+	     url('fonts/tt-berlinerins-grotesk.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+h1 {
+	font-family: 'TTBerlinerins-Grotesk', helvetica, arial, sans-serif;
+}
