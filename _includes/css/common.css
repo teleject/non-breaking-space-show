@@ -1,128 +1,210 @@
-* {
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-
-body {
-	margin: 1rem;
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #content img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.current{
-	background-color: inherit;
-	color: inherit;
+header {
+  padding: 1rem;
+
+  border-top: 3px solid green;
+  background-color: #fff;
+}
+
+h1 {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+h1 svg {
+  max-width: 900px;
+  height: initial;
+  margin: 0 auto;
+}
+
+.current {
+  color: inherit;
+  background-color: inherit;
+}
+
+header + hr,
+nav + hr {
+  display: none;
 }
 
 nav {
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: #fff;
 }
-nav li { 
-	display: inline-block;
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+nav li {
+  font-size: 0.66em;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  order: 0;
+  flex: 1 1 auto;
+  align-self: center;
+  text-align: center;
+}
+
+nav li:last-of-type {
+}
+
+#content {
+  background-color: #fff;
+}
+
+#content .number {
+  font-weight: bold;
+  font-size: 7em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#content h1 {
+  max-width: 960px;
+  text-align: center;
+  font-size: 3em;
+  padding: 0;
+  margin: 0 auto 0em;
 }
 
 audio {
-	width: 100%;
+  width: 100%;
 }
 
 .nav-header {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .nav-header .current {
-		background-color: black;
-	color: white;
-
-}
-
-.sponsor-text {
-	
-}
-
-.epsiode {
+  color: white;
+  background-color: black;
 }
 
 .episode__details {
-	font-size: .9rem;
-	text-transform: uppercase;
+  background-color: #cf0;
+  margin: 0 auto;
+  xpadding: 1em 0;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+.episode__details span {
+  order: 0;
+  flex: 2 1 auto;
+  align-self: center;
+  text-align: center;
 }
 
 .episode__player {
-
+  margin: 0;
+  padding: 0;
 }
 
-
-audio
-{
-transition:all 0.3s ease-out;
-box-shadow: 3px 3px 5px 0px rgba(0,0,0,.5);
-opacity: .9;
+audio {
+  transition: all 0.3s ease-out;
+  opacity: 0.9;
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
-audio:hover, audio:focus, audio:active
-{
-	position: relative;
-	top: 2px;
-	left: 2px;
-transition:all 0.3s ease-out;
-box-shadow: 3px 3px 5px 0px rgba(0,0,0,.0);
-opacity: .7;
+audio:hover,
+audio:focus,
+audio:active {
+  transition: all 0.3s ease-out;
+
+  opacity: 0.7;
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0);
 }
 
 audio::-webkit-media-controls-panel {
-	background: black;
-  border-radius: 0;
-  border: 1px solid rgba(153,153,153,.8);
-  border-bottom: 1px solid rgba(204,204,204,.8);
-  border-right: 1px solid rgba(204,204,204,.8);
+  border-top: 1px solid rgba(153, 153, 153, 0.8);
+  background-color: #f4d03f;
+  background-image: linear-gradient(90deg, #f4d03f 0%, #16a085 100%);
 }
 
 audio::-webkit-media-controls-panel:hover {
-	    border: 1px solid rgba(153,153,153,.8);
+  border-top: initial;
 }
 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-volume-slider {
-	color: red;
-	x-webkit-filter: hue-rotate(143deg) saturate(10); 
+  color: red;
 }
 
+section.network {
+  background-color: black;
+  text-align: center;
+  margin: 0;
+}
 
 .subscribe__links a[href^="http"] {
   padding-left: 19px;
-  background-size: 16px 16px;
+
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: 16px 16px;
 }
-.subscribe__links a[href*="itunes.apple.com"]{
+.subscribe__links a[href*="itunes.apple.com"] {
   background-image: url(http://www.google.com/s2/favicons?domain=itunes.apple.com);
 }
-.subscribe__links a[href*="stitcher.com"]{
+.subscribe__links a[href*="stitcher.com"] {
   background-image: url(http://www.google.com/s2/favicons?domain=stitcher.com);
 }
-.subscribe__links a[href*="tunein.com"]{
+.subscribe__links a[href*="tunein.com"] {
   background-image: url(http://www.google.com/s2/favicons?domain=tunein.com);
 }
-.subscribe__links a[href*="youtube.com"]{
+.subscribe__links a[href*="youtube.com"] {
   background-image: url(http://www.google.com/s2/favicons?domain=youtube.com);
 }
 
-.subscribe__links a[href*="facebook.com"]{
+.subscribe__links a[href*="facebook.com"] {
   background-image: url(http://www.google.com/s2/favicons?domain=facebook.com);
 }
 
-.subscribe__links a  {
+.subscribe__links a {
   display: block;
+
   margin: 10px;
+
   text-decoration: none;
 }
 
 .subscribe__links {
-  list-style-type: none;
   margin-left: 0;
   padding-left: 0;
+
+  list-style-type: none;
 }

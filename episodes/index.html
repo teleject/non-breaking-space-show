@@ -1,22 +1,60 @@
----
-layout: archive
-title: Episodes
----
+--- layout: archive title: Episodes ---
 
 <!-- for index.html page in /episode/, use archive.html in _layout -->
 
 
-<h1>{{page.title}}</h1>
+<!DOCTYPE html>
 
-<ol reversed="reversed">
-{% for episodes in site.posts %}
-	<li>
-		<a href="{{ site.baseurl }}{{episodes.url}}">{{episodes.title}}</a>
-		
-		<ul>{% for guest in guest.starring %}
-			<li>{{guest.starring}}</li>
-		{% endfor %}</ul>
-		<p></p>
-	</li>
-{% endfor %}</ol>
+<head>
+	<title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
+	{% seo url=false %}
+	<link href="{{site.baseurl}}/non-breaking-space-show.css" rel="stylesheet" />
+	<script src="{{site.baseurl}}/non-breaking-space-show.js"></script> {% include meta.html %}
 
+</head>
+
+<body>
+
+	{% include header.html navclass='header' %}
+
+	<hr /> {% include nav.html navclass='nav-header' %}
+
+	<hr />
+
+	<section id="content">
+
+		<h1>{{page.title}} sss</h1>
+
+		<ol reversed="reversed">
+			{% for episodes in site.posts %}
+			<li>
+				<a href="{{ site.baseurl }}{{episodes.url}}">{{episodes.title}}</a>
+
+				<ul>{% for guest in guest.starring %}
+					<li>{{guest.starring}}</li>
+					{% endfor %}</ul>
+				<p>x</p>
+			</li>
+			{% endfor %}</ol>
+
+	</section>
+
+	<hr />
+
+	<footer>
+
+		{% include footer.html %}
+
+	</footer>
+
+	<hr />
+
+	<section class="network">
+
+		{% include goodstuff.html %}
+
+	</section>
+
+</body>
+
+</html>

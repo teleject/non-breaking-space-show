@@ -1,0 +1,67 @@
+---
+layout: guests
+title: Guests
+meta: The most recent news and developments related to planetary objects of the universe.
+changefreq: weekly
+---
+<!DOCTYPE html>
+<head>
+    <title>{% if page.title %}{{page.title}} · {% endif %}Non Breaking Space Show</title>
+    <link href="{{site.baseurl}}/non-breaking-space-show.css" rel="stylesheet" />
+    <script src="{{site.baseurl}}/non-breaking-space-show.js"></script>
+
+	{% include meta.html %}
+
+</head>
+
+<body>
+
+{% include header.html navclass='header' %}
+
+
+{% include nav.html navclass='nav-header' %}
+
+
+<hr />
+
+<ul>
+{% for guest in site.data.guests %}
+  <li>
+    <a href="https://twitter.com/{{ guest.twitter }}">
+      {{ guest.guest}}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+
+<section id="content">
+
+{{ content }}
+
+</section>
+
+
+{% include nav.html navclass='nav-footer' %}
+
+
+
+<hr />
+
+    <footer>
+
+	{% include footer.html %}
+
+    </footer>
+
+<hr />
+
+<section class="network">
+
+{% include goodstuff.html %}
+
+</section>
+
+</body>
+</html>
+

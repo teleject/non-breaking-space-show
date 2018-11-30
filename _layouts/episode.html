@@ -14,47 +14,42 @@ layout: episode
 </head>
 
 <body>
-    <header>
-        <h1><a href="{{site.baseurl}}/">Non Breaking Space Show</a></h1>
+
+{% include header.html navclass='header' %}
+
+<hr />
 
 
 {% include nav.html navclass='nav-header' %}
-
-    </header>
 
 <hr />
 
 <section id="content">
 
+<div class="number"> № {{page.episode}} </div>
 
+<h1 class="title">  {{page.title}} <small>▶</small></h1>
 
-<h1>{{page.title}}</h1>
+ <p class="episode__details">
 
- <p class="episode__details">&#x1f4c5; {% assign d = page.date | date: "%-d"  %}
+     <span class="date">🗓️ {% assign d = page.date | date: "%-d"  %}
 {{ page.date | date: "%B" }} 
-{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}  🕓 {{ page.minutes }} Minutes</p>
+{% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }} </span>
+
+    <span class="length">🕒 {{ page.minutes }} Minutes</span>
+    <span class="download"><a href="#">⬇️ Download</a></span>
+
+</p>
 
 {% include audio.html file=page.audio %}
+
+<h3>Show Description</h3>
 
 {{ page.meta | markdownify }}
 
 {{content}}
 
-
-
-
-
-</section>
-
 {% include nav.html navclass='nav-footer' %}
-
-<hr />
-
-<section class="network">
-
-{% include goodstuff.html %}
-
-</section>
 
 <hr />
 
@@ -63,5 +58,12 @@ layout: episode
     {% include footer.html %}
 
     </footer>
+
+<hr />
+
+    {% include goodstuff.html %}
+
+</hr />
+
 </body>
 </html>

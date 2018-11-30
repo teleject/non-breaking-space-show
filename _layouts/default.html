@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <header>
-        <h1><a href="{{site.baseurl}}/">Non Breaking Space Show</a></h1>
 
+{% include header.html navclass='header' %}
+
+<hr />
 
 {% include nav.html navclass='nav-header' %}
-
-    </header>
 
 <hr />
 
@@ -36,26 +35,18 @@
 {% include recently.html %}
 
 
-
-<section>
-
-{% include nav.html navclass='nav-footer' %}
-
-<hr />
-
-<section class="network">
-
-{% include goodstuff.html %}
-
 </section>
 
-<hr />
 
-    <footer>
+    {% include nav.html navclass='nav-footer' %}
+
+<hr />
 
     {% include footer.html %}
 
-    </footer>
+<hr />
+
+    {% include goodstuff.html %}
 
 </body>
 </html>

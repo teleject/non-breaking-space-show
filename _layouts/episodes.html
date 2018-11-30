@@ -11,16 +11,15 @@ layout: archive
 
 	{% include meta.html %}
 
-
 </head>
 
 <body>
-    <header>
-        <h1><a href="{{site.baseurl}}//">Non Breaking Space Show</a></h1>
 
-{% include nav.html navclass='nav-header' %}
+    {% include header.html navclass='header' %}
 
-    </header>
+<hr />
+
+    {% include nav.html navclass='nav-header' %}
 
 <hr />
 
@@ -30,24 +29,15 @@ layout: archive
 
 </section>
 
-
-{% include nav.html navclass='nav-footer' %}
-
-<hr />
-
-<section class="network">
-
-{% include goodstuff.html %}
-
-</section>
+    {% include nav.html navclass='nav-footer' %}
 
 <hr />
-
-    <footer>
 
 	{% include footer.html %}
 
-    </footer>
+<hr />
+
+    {% include goodstuff.html %}
 
 </body>
 </html>
